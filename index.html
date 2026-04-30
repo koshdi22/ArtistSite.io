@@ -58,26 +58,30 @@
 
 <!-- HOME -->
 <div id="page-home" class="page flex-col min-h-screen">
-  <!-- Центр -->
-  <div class="flex flex-col items-center justify-center px-6 text-center flex-1">
+  <div class="flex flex-col items-center justify-center px-6 text-center" style="height: calc(100vh - 60px);">
     <p class="text-xs uppercase tracking-[0.3em] text-dark/50 mb-4 fade-in stagger-1">
       2D Artist & Illustrator
     </p>
+
     <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight fade-in stagger-2">
       KOSHDI
     </h1>
-    <p class="mt-4 text-lg md:text-xl text-dark/60 font-light max-w-md fade-in stagger-3">
+
+    <p id="home-tagline" class="mt-4 text-lg md:text-xl text-dark/60 font-light max-w-md fade-in stagger-3">
       Capturing stars in ink & pixel
     </p>
+
     <div class="mt-10 flex gap-4 fade-in stagger-4">
-      <button onclick="navigate('gallery')" class="btn-primary">
+      <button onclick="navigate('gallery')" class="px-8 py-3 bg-dark text-light text-sm uppercase hover:bg-dark/80 transition">
         View Works
       </button>
-      <button onclick="navigate('commissions')" class="btn-outline">
+
+      <button onclick="navigate('commissions')" class="px-8 py-3 border border-dark text-sm uppercase hover:bg-dark hover:text-light transition">
         Commission
       </button>
     </div>
   </div>
+</div>
      <div id="home-marquee">
       <div id="page-home" class="page flex-col h-full">
       <div class="border-t border-dark/10 py-4 marquee mt-auto">
@@ -385,4 +389,4 @@
 <script src="script.js"></script>
 
 </body>
-</html>
+</html>                                                                                                                 
