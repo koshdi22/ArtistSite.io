@@ -11,6 +11,11 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+.page-home-fixed {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
 .page { display: none; }
 .page.active { display: flex; }
 
