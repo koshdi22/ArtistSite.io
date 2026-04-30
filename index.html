@@ -58,7 +58,8 @@
       <!-- HOME -->
 <div id="page-home" class="page flex-col min-h-screen relative overflow-hidden">
 
-  <div class="flex flex-col items-center justify-center text-center px-6 h-full">
+  <!-- CENTER CONTENT -->
+  <div class="flex flex-col items-center justify-center text-center px-6 h-screen pb-20">
 
     <p class="text-xs uppercase tracking-[0.3em] text-dark/50 mb-4 fade-in stagger-1">
       2D Artist & Illustrator
@@ -73,19 +74,19 @@
     </p>
 
     <div class="mt-10 flex gap-4 fade-in stagger-4">
-      <button onclick="navigate('gallery')" class="px-8 py-3 bg-dark text-light text-sm uppercase transition hover:bg-dark/80">
+      <button onclick="navigate('gallery')" class="px-8 py-3 bg-dark text-light text-sm uppercase hover:bg-dark/80 transition">
         View Works
       </button>
 
-      <button onclick="navigate('commissions')" class="px-8 py-3 border border-dark text-sm uppercase transition hover:bg-dark hover:text-light">
+      <button onclick="navigate('commissions')" class="px-8 py-3 border border-dark text-sm uppercase hover:bg-dark hover:text-light transition">
         Commission
       </button>
     </div>
 
   </div>
 
-  <!-- MARQUEE -->
-  <div class="border-t border-dark/10 py-4 marquee absolute bottom-0 left-0 w-full bg-light">
+  <!-- MARQUEE FIXED BOTTOM -->
+  <div class="absolute bottom-0 left-0 w-full border-t border-dark/10 bg-light py-4 marquee">
     <div class="marquee-inner text-sm uppercase tracking-[0.2em] text-dark/30 font-medium">
       <span class="mx-8">★ Celebrity Portraits</span>
       <span class="mx-8">★ Fan Art</span>
