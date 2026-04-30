@@ -77,21 +77,10 @@ body.no-scroll {
   box-shadow: 0 20px 40px rgba(30, 29, 33, 0.15);
 }
 
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-}
+  .marquee { overflow: hidden; white-space: nowrap; }
+  .marquee-inner { display: inline-block; animation: marquee 20s linear infinite; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-.marquee-inner {
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 ::-webkit-scrollbar {
   width: 6px;
 }
