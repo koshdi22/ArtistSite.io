@@ -1,4 +1,6 @@
-html { visibility: hidden; }
+html {
+  scrollbar-gutter: stable;
+}
 
 body {
   height: 100%;
@@ -119,6 +121,10 @@ button:hover {
   transform: translateY(-1px);
 }
 
+#app-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .flex-1 {
   flex: 1;
