@@ -19,6 +19,12 @@ body {
 .page { display: none; }
 .page.active { display: flex; }
 
+#main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
 .nav-link {
   position: relative;
   cursor: pointer;
